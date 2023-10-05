@@ -1,149 +1,219 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        *{
-           
-            box-sizing: border-box;
-        }
-        table{
-            padding: 0;
-            margin: 0;
 
-        }
-        table tr td{
-         
-            vertical-align: text-top;
-         
-        }
-    </style>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>edit</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../vendors/fontawesome/css/all.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="./edit.css">
 </head>
+
 <body>
 
+    <div class="container mt-5">
+        <div class="row">
+            <div class="d-flex align-items-start">
+                <div class="nav flex-column nav-pills me-3 bg-dark" id="v-pills-tab" role="tablist"
+                    aria-orientation="vertical">
+                    <div style="height:80px;"></div>
+                    <button class="nav-link text-white active rounded-0" id="v-pills-home-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
+                        aria-selected="true">
+                        <div><i class="fa fa-user text-danger fs-3"></i></div>
+                        <div>Account</div>
+                    </button>
+                    <button class="nav-link rounded-0 text-white p-3" id="v-pills-profile-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile"
+                        aria-selected="false">
+                        <div><i class="fa fa-tachometer text-danger fs-3"></i></div>
+                        <div>Dashboard</div>
+                    </button>
+                    <button class="nav-link rounded-0 text-white p-3" id="v-pills-Courses-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-Courses" type="button" role="tab" aria-controls="v-pills-Courses"
+                        aria-selected="false">
+                        <div><i class="fa fa-dashboard text-danger fs-3"></i></div>
+                        <div>Courses</div>
+                    </button>
+                    <button class="nav-link rounded-0 text-white p-3" id="v-pills-profile-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile"
+                        aria-selected="false">
+                        <div><i class="fa fa-table text-danger fs-3"></i></div>
+                        <div>Calendar
+                        </div>
+                    </button>
+                    <button class="nav-link rounded-0 text-white p-3" id="v-pills-profile-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile"
+                        aria-selected="false">
+                        <div><i class="fa fa-diamond text-danger fs-3"></i></div>
+                        <div>Inbox
+                        </div>
+                    </button>
+                    <button class="nav-link rounded-0 text-white p-3" id="v-pills-profile-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile"
+                        aria-selected="false">
+                        <div><i class="fa fa-edit text-danger fs-3"></i></div>
+                        <div>History
+                        </div>
+                    </button>
+                    <button class="nav-link rounded-0 text-white p-3" id="v-pills-profile-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile"
+                        aria-selected="false">
+                        <div><i class="fa fa-inbox text-danger fs-3"></i></div>
+                        <div>Studio
+                        </div>
+                    </button>
+                    <button class="nav-link rounded-0 text-white p-3" id="v-pills-profile-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile"
+                        aria-selected="false">
+                        <div><i class="fa fa-sign-out text-danger fs-3"></i></div>
+                        <div>Commons</div>
+                    </button>
+                    <button class="nav-link rounded-0 text-white p-3" id="v-pills-profile-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile"
+                        aria-selected="false">
+                        <div><i class="fa fa-info-circle text-danger fs-3"></i></div>
+                        <div>Help</div>
+                    </button>
+                </div>
+                <div class="tab-content flex-grow-1" id="v-pills-tabContent">
+                    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                        aria-labelledby="v-pills-home-tab" tabindex="0">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="mt-4">
+                                    <span class="fa fa-bars text-danger me-2"></span>
+                                    Jose Annunziato's Profile
+                                </div>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-2">
+                                <div class="list-group">
+                                    <a href="#"
+                                        class="list-group-item list-group-item-action rounded-0 border-0 text-danger">Notifications</a>
+                                    <a href="#"
+                                        class="list-group-item list-group-item-action rounded-0 border-0 text-danger active">Profile</a>
+                                    <a href="#"
+                                        class="list-group-item list-group-item-action rounded-0 border-0 text-danger">Files</a>
+                                    <a href="#"
+                                        class="list-group-item list-group-item-action rounded-0 border-0 text-danger">Settings</a>
+                                    <a href="#"
+                                        class="list-group-item list-group-item-action rounded-0 border-0 text-danger">ePortfolios</a>
+                                    <a href="#"
+                                        class="list-group-item list-group-item-action rounded-0 border-0 text-danger">Shared
+                                        Content</a>
+                                    <a href="#"
+                                        class="list-group-item list-group-item-action rounded-0 border-0 text-danger">The
+                                        Hub</a>
+                                    <a href="#"
+                                        class="list-group-item list-group-item-action rounded-0 border-0 text-danger">Owickly
+                                        Course
+                                        Tools</a>
+                                    <a href="#"
+                                        class="list-group-item list-group-item-action rounded-0 border-0 text-danger">Global
+                                        Announcements</a>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="person">
+                                            <div>
+                                                <i class='fa fa-user-circle perser-icon'></i>
+                                                <a href="edit.html" class="float-end btn btn-light text-dark">
+                                                    <span class="fa fa-pen me-2 text-muted"></span>Edit Profile
+                                                </a>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="exampleFormControlInput1" class="form-label">Name:*</label>
+                                                <input type="email" class="form-control" id="exampleFormControlInput1"
+                                                    placeholder="Jose Annunziato">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="exampleFormControlInput1"
+                                                    class="form-label">Pronouns:</label>
+                                                <select class="form-select">
+                                                    <option value="None">None</option>
+                                                    <option value="None">None</option>
+                                                    <option value="None">None</option>
+                                                </select>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="exampleFormControlInput1" class="form-label">Title:</label>
+                                                <input type="email" class="form-control" id="exampleFormControlInput1"
+                                                    placeholder="Jose Annunziato">
+                                            </div>
+                                            <h2>Contact
+                                            </h2>
+                                            <p>
+                                                No registered services, you can add some on the <a href="#">settings</a>
+                                                page.
 
-    <table>
-        <tr>
-            <td>
-                <ul>
-                    <li>
-                        <a href="/Kanbas/Courses/home.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="#">Account</a>
-                    </li>
-                    <li>
-                        <a href="#">Dashboard</a>
-                    </li>
-                    <li>
-                        <a href="/Kanbas/Courses/grades.html">Courses</a>
-                    </li>
-                    <li>
-                        <a href="#">Calendar</a>
-                    </li>
-                    <li>
-                        <a href="#">Inbox</a>
-                    </li>
-                    <li>
-                        <a href="#">History</a>
-                    </li>
-                    <li>
-                        <a href="#">Studio</a>
-                    </li>
-                    <li>
-                        <a href="#">Commons</a>
-                    </li>
-                    <li>
-                        <a href="#">Help</a>
-                    </li>
-                </ul>
+                                            </p>
+                                            <div class="mb-3">
+                                                <label for="exampleFormControlTextarea1" class="form-label"
+                                                    Biography</label>
+                                                    <textarea class="form-control" id="exampleFormControlTextarea1"
+                                                        cols="40" rows="4"></textarea>
+                                            </div>
+                                            <h2>Links</h2>
+                                            <p>
+                                                <span class="fw-bold mx-4">Title</span>
+                                                <span class="fw-bold mx-5">URL</span>
+                                            </p>
+                                            <p>
+                                                <span>
+                                                    <button class="btn btn-light">YouTuble</button>
+                                                    <i class="fa fa-long-arrow-right"></i>
+                                                    <button class="btn btn-light">youtuble</button>
+                                                    <i class="fa fa-close text-danger"></i>
+                                                </span>
+                                            </p>
+                                            <p>
+                                                <button class="btn btn-light">Add other link</button>
+                                            </p>
 
-            </td>
-          <td>
-            <ul>
-                <li>
-                    <a href="#">Notifications</a>
-                </li>
-                <li>
-                    <a href="#">Profile</a>
-                </li>
-                <li>
-                    <a href="#">Files</a>
-                </li>
-                <li>
-                    <a href="#">Settings</a>
-                </li>
-                <li>
-                    <a href="#">ePortfolios</a>
-                </li>
-                <li>
-                    <a href="#">Shared Content</a>
-                </li>
-                <li>
-                    <a href="#">The Hub</a>
-                </li>
-                <li>
-                    <a href="#">Owickly Course Tools</a>
-                </li>
-                <li>
-                    <a href="#">Global Announcements</a>
-                </li>
-            </ul>
-          </td>
-<td>
-    <h1>Jose Annunziato
-    </h1>
-    <span>Name:*</span><input type="text" value="Jose Annunziato"><span>Pronouns:</span><select name="" id="">
-        <option value="None">None</option>
-        <option value="None">None</option>
-        <option value="None">None</option>
+                                            <button class="btn btn-light"
+                                                onclick="location.href='index.html';">cancel</button>
+                                            <button class="btn btn-danger" onclick="location.href='index.html';">save
+                                                profile</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-    </select> <br>
-    <span>Title:</span><input type="text"><br>
-    <h2>Contact
-    </h2>
-    <p>
-        No registered services, you can add some on the <a href="#">settings</a> page.
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab"
+                tabindex="0">
+                <div class="row">
+                    <div class="col-12">
+                        <span class="fs-1 danger">DASHBOARD</span>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="v-pills-Courses" role="tabpanel" aria-labelledby="v-pills-Courses-tab"
+                tabindex="0">
+                <div class="row">
+                    <div class="col-12">
+                        <span class="fs-1 success">Courses</span>
+                    </div>
+                </div>
+            </div>
 
-    </p>
-    <h2>Contact
-    </h2>
-    <p>
-        No registered services, you can add some on the <a href="#">settings</a> page.
 
-    </p>
-    <p>Faculty, Software Engineer,AI,Space, and renewables enthusiast.
-    </p>
-    <textarea name="" id="" cols="40" rows="4">
-        Faculty, software Engineer, AI,Space, andrenewables enthusiast.
 
-    </textarea>
-    <h2>Links</h2>
-    <ul>
-        <li>
-            <a href="#">YouTubeLinks to an external site.
-            </a>
-        </li>
-    </ul>
-    <input type="text" value="You Tube">→<input type="text" value="https://www.youtube.com"><a href="#">Remove</a> <br>
-    <button>Add Another link</button><br>
-    <button onclick="location.href='index.html';">cancel</button>
-    <button onclick="location.href='index.html';">save profile</button><br>
-    <button>Edit profile</button><button onclick="location.href='index.html';">cancel editing</button>
-</td>
-     
-        
-        </tr>
-    </table>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
-
-
-
-
-
-
-
-
