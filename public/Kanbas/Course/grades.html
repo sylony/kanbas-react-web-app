@@ -1,198 +1,246 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        *{
-           
-            box-sizing: border-box;
-        }
-        table{
-            padding: 0;
-            margin: 0;
 
-        }
-        table tr td{
-         
-            vertical-align: text-top;
-         
-        }
-    </style>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Index</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../../vendors/fontawesome/css/all.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./grades.css">
 </head>
+
 <body>
 
+  <div class="container mt-5">
+    <div class="row">
+      <div class="d-flex align-items-start">
+        <div class="nav d-none d-md-block flex-column nav-pills me-3 bg-dark" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+          <div style="height:80px;"></div>
+          <button class="nav-link text-white rounded-0" id="v-pills-home-tab" data-bs-toggle="pill"
+            data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true"><a
+              href="../profile/index.html">
+              <div><i class="fa fa-user text-danger fs-3"></i></div>
+              <div>Account</div>
+            </a>
+          </button>
+          <button class="nav-link rounded-0 text-white p-3" id="v-pills-profile-tab" data-bs-toggle="pill"
+            data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile"
+            aria-selected="false"><a
+            href="../Dashboard/Dashboard.html">
+            <div><i class="fa fa-check-circle text-danger fs-3"></i></div>
+            <div>Dashboard</div></a>
+          </button>
+          <button class="nav-link rounded-0 text-white  active p-3" id="v-pills-Courses-tab" data-bs-toggle="pill"
+            data-bs-target="#v-pills-Courses" type="button" role="tab" aria-controls="v-pills-Courses"
+            aria-selected="false">
+            <div><i class="fa fa-dashboard text-danger fs-3"></i></div>
+            <div>Courses</div>
+          </button>
+          <button class="nav-link rounded-0 text-white p-3" id="v-pills-profile-tab" data-bs-toggle="pill"
+            data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile"
+            aria-selected="false">
+            <div><i class="fa fa-table text-danger fs-3"></i></div>
+            <div>Calendar
+            </div>
+          </button>
+          <button class="nav-link rounded-0 text-white p-3" id="v-pills-profile-tab" data-bs-toggle="pill"
+            data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile"
+            aria-selected="false">
+            <div><i class="fa fa-diamond text-danger fs-3"></i></div>
+            <div>Inbox
+            </div>
+          </button>
+          <button class="nav-link rounded-0 text-white p-3" id="v-pills-profile-tab" data-bs-toggle="pill"
+            data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile"
+            aria-selected="false">
+            <div><i class="fa fa-edit text-danger fs-3"></i></div>
+            <div>History
+            </div>
+          </button>
+          <button class="nav-link rounded-0 text-white p-3" id="v-pills-profile-tab" data-bs-toggle="pill"
+            data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile"
+            aria-selected="false">
+            <div><i class="fa fa-inbox text-danger fs-3"></i></div>
+            <div>Studio
+            </div>
+          </button>
+          <button class="nav-link rounded-0 text-white p-3" id="v-pills-profile-tab" data-bs-toggle="pill"
+            data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile"
+            aria-selected="false">
+            <div><i class="fa fa-sign-out text-danger fs-3"></i></div>
+            <div>Commons</div>
+          </button>
+          <button class="nav-link rounded-0 text-white p-3" id="v-pills-profile-tab" data-bs-toggle="pill"
+            data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile"
+            aria-selected="false">
+            <div><i class="fa fa-info-circle text-danger fs-3"></i></div>
+            <div>Help</div>
+          </button>
+        </div>
+        <div class="w-100">
+            <div class="d-flex align-items-center w-100 justify-content-between">
+                <div class="d-flex align-items-center">
+                <span class="fa fa-bars text-danger me-2"></span>
+                  <ol class="breadcrumb mb-0">
+                    <li class="breadcrumb-item"><a href="#" class=" text-danger">Home</a></li>
+                    <li class="breadcrumb-item active">Grades</li>
+                </ol>
+                </div>
+            </div>
+            <hr>
+            <div class="row mt-3">
+                <div class="col-2 d-none d-md-block">
+                    <div class="list-group">
+                        <a href="#"
+                            class="list-group-item list-group-item-action rounded-0 border-0 text-danger">Home</a>
+                        <a href="#"
+                            class="list-group-item list-group-item-action rounded-0 border-0 text-danger">Modules</a>
+                        <a href="#"
+                            class="list-group-item list-group-item-action rounded-0 border-0 text-danger">Piazza</a>
+                        <a href="#"
+                            class="list-group-item list-group-item-action rounded-0 border-0 text-danger">Zoom Meetings</a>
+                        <a href="./assignments/index.html"
+                            class="list-group-item list-group-item-action rounded-0 border-0 text-danger">Assignments</a>
+                        <a href="#"
+                            class="list-group-item list-group-item-action rounded-0 border-0 text-danger">Quizzes
+                            Content</a>
+                        <a  href="../grades.html"
+                            class="list-group-item list-group-item-action rounded-0 border-0 text-danger active">Grades
+                            </a>
+                        <a href="#"
+                            class="list-group-item list-group-item-action rounded-0 border-0 text-danger">People
+                            </a>
+                        <a href="#"
+                            class="list-group-item list-group-item-action rounded-0 border-0 text-danger">Discussions
+                           </a>
+                           <a href="#"
+                            class="list-group-item list-group-item-action rounded-0 border-0 text-danger">Announcements
+                           </a>
+                           <a href="#"
+                            class="list-group-item list-group-item-action rounded-0 border-0 text-danger">Pages
+                           </a>
+                           <a href="#"
+                            class="list-group-item list-group-item-action rounded-0 border-0 text-danger">Files
+                           </a>
+                           <a href="#"
+                            class="list-group-item list-group-item-action rounded-0 border-0 text-danger">Rubrics
+                           </a>
+                           <a href="#"
+                            class="list-group-item list-group-item-action rounded-0 border-0 text-danger">Outcomes
+                           </a>
+                           <a href="#"
+                            class="list-group-item list-group-item-action rounded-0 border-0 text-danger">Collaborations
+                           </a>
 
-    <table>
-        <tr>
-            <td>
-                <ul>
-                    <li>
-                        <a href="/Kanbas/profile/index.html">Account</a>
-                    </li>
-                    <li>
-                        <a href="#">Dashboard</a>
-                    </li>
-                    <li>
-                        <a href="/Kanbas/Course/grades.html">Courses</a>
-                    </li>
-                    <li>
-                        <a href="#">Calendar</a>
-                    </li>
-                    <li>
-                        <a href="#">Inbox</a>
-                    </li>
-                    <li>
-                        <a href="#">History</a>
-                    </li>
-                    <li>
-                        <a href="#">Studio</a>
-                    </li>
-                    <li>
-                        <a href="#">Commons</a>
-                    </li>
-                    <li>
-                        <a href="#">Help</a>
-                    </li>
-                </ul>
+                           <a href="#"
+                            class="list-group-item list-group-item-action rounded-0 border-0 text-danger">Syllabus
+                           </a>
+                           <a href="#"
+                            class="list-group-item list-group-item-action rounded-0 border-0 text-danger">Settings
+                           </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-10 ">
+                    <div class="d-flex justify-content-end align-items-center">
+                        
+                        <div><button class="btn btn-light"><i class="fa fa-sign-in fs-10"></i> Published</button>
+                            <button class="btn btn-light"><i class="fa fa-sign-out  fs-10"></i> Published</button>
+                            <button class="btn btn-light"><i class="fa fa-cog fs-10"></i></button>
+                            </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-6"><h5>Student Names</h5></div>
+                        <div class="col-6"><h5>Student Names</h5></div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-6"><div class="input-group">
+                            <input type="text" class="form-control" aria-label="Text input with segmented dropdown button" placeholder="Search Students">
+                            <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                              <span class="visually-hidden">Toggle Dropdown</span>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="#">Separated link</a></li>
+                            </ul>
+                          </div></div>
+                        <div class="col-6"><div class="input-group">
+                            <input type="text" class="form-control" aria-label="Text input with segmented dropdown button" placeholder="Search Assignments">
+                            <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                              <span class="visually-hidden">Toggle Dropdown</span>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="#">Separated link</a></li>
+                            </ul>
+                          </div></div>
+                    </div>
+                    <button class="btn btn-light border mt-3"><i class="fa fa-filter fs-10"></i>Apply Filters</button>
+                    <table class="table mt-3 table-striped table-bordered">
+                        <thead>
+                          <tr>
+                            <th scope="col">Student Name</th>
+                            <th scope="col">A1</th>
+                            <th scope="col">A2</th>
+                            <th scope="col">A3</th>
+                            <th scope="col">A4</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="tr">
+                            <td>Doxa Asibey</td>                            
+                            <td class="p-0"><input type="text" class="" value="100%"></td>
+                            <td class="p-0"><input type="text" class="" value="100%"></td>
+                            <td class="p-0"><input type="text" class="" value="80%"></td>
+                            <td class="p-0"><input type="text" class="" value="100%"></td>
+                          </tr>
+                          
+                          <tr class="tr">
+                            <td>Doxa Asibey</td>                            
+                            <td class="p-0"><input type="text" class="" value="100%"></td>
+                            <td class="p-0"><input type="text" class="" value="100%"></td>
+                            <td class="p-0"><input type="text" class="" value="80%"></td>
+                            <td class="p-0"><input type="text" class="" value="100%"></td>
+                          </tr>
+                          
+                          <tr class="tr">
+                            <td>Doxa Asibey</td>                            
+                            <td class="p-0"><input type="text" class="" value="100%"></td>
+                            <td class="p-0"><input type="text" class="" value="100%"></td>
+                            <td class="p-0"><input type="text" class="" value="80%"></td>
+                            <td class="p-0"><input type="text" class="" value="100%"></td>
+                          </tr>
+                          <tr class="tr">
+                            <td>Doxa Asibey</td>                            
+                            <td class="p-0"><input type="text" class="" value="100%"></td>
+                            <td class="p-0"><input type="text" class="" value="100%"></td>
+                            <td class="p-0"><input type="text" class="" value="80%"></td>
+                            <td class="p-0"><input type="text" class="" value="100%"></td>
+                          </tr>
+                          <tr class="tr">
+                            <td>Doxa Asibey</td>                            
+                            <td class="p-0"><input type="text" class="" value="100%"></td>
+                            <td class="p-0"><input type="text" class="" value="100%"></td>
+                            <td class="p-0"><input type="text" class="" value="80%"></td>
+                            <td class="p-0"><input type="text" class="" value="100%"></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+        </div>
+       
+        
+      </div>
+    </div>
 
-            </td>
-            <td>
-                <ul>
-                    <li>
-                        <a href="/Kanbas/Course/home.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="#">Modules</a>
-                    </li>
-                    <li>
-                        <a href="#">Piazza</a>
-                    </li>
-                    <li>
-                        <a href="#">Zoom Meetings</a>
-                    </li>
-                    <li>
-                        <a href="/Kanbas/Course/assignments/index.html">Assignments</a>
-                    </li>
-                    <li>
-                        <a href="#">Quizzes</a>
-                    </li>
-                    <li>
-                        <a href="/Kanbas/Course/grades.html">Grades</a>
-                    </li>
-                    <li>
-                        <a href="#">People</a>
-                    </li>
-                    <li>
-                        <a href="#">Panopto Video</a>
-                    </li>
-
-                    <li>
-                        <a href="#">Discussions</a>
-                    </li>
-                    <li>
-                        <a href="#">Announcements</a>
-                    </li>
-                    <li>
-                        <a href="#">Pages</a>
-                    </li>
-                    <li>
-                        <a href="#">Files</a>
-                    </li>
-                    <li>
-                        <a href="#">Rubrics</a>
-                    </li>
-                    <li>
-                        <a href="#">Outcomes</a>
-                    </li>
-                    <li>
-                        <a href="#">Collaborations</a>
-                    </li>
-                    <li>
-                        <a href="#">Syllabus</a>
-                    </li>
-                    <li>
-                        <a href="#">Settings</a>
-                    </li>
-                </ul>
-            </td>
-          <td>
-            <select name="" id="">
-                <option value="Gradebook">Gradebook</option>
-                <option value="Gradebook">Gradebook</option>
-
-            </select>
-            <button>Import</button>
-            <select name="" id="">
-                <option value="Export">Export</option>
-                <option value="Export">Export</option>
-
-            </select>
-            <button>Configure</button>
-
-            <h2>Student Names
-            </h2>
-            <input type="text" placeholder="Search Students">
-            <h2>Assignment Names
-                
-            </h2>
-            <input type="text" placeholder="Search Assignments"><br><br>
-            <button>Apply Fiiters</button><br><br>
-<table border="1" style="text-align: center;">
-    <tr>
-        <th>Student Name
-        </th>
-        <th>A1 SETUP <br>Out of 100</th>
-        <th>
-            A2 HTML <br>Out of 100
-        </th>
-        <th>
-            A3 CSS <br>Out of 100
-        </th>
-        <th>
-            A4 BOOTSTRAP <br>Out of 100
-        </th>
-    </tr>
-    <tr>
-        <td>Alice Wonderland</td>
-        <td>98</td>
-        <td>89</td>
-        <td>87</td>
-        <td>90</td>
-    </tr>
-    <tr>
-        <td>Princes Leia</td>
-        <td>98</td>
-        <td>80</td>
-        <td>87</td>
-        <td>86</td>
-    </tr>
-    <tr>
-        <td>Luke Skywalker</td>
-        <td>98</td>
-        <td>89</td>
-        <td>87</td>
-        <td>90</td>
-    </tr>
-    <tr>
-        <td>Han Solo</td>
-        <td>98</td>
-        <td>89</td>
-        <td>87</td>
-        <td>90</td>
-    </tr>
-</table>
-          </td>
-        </tr>
-    </table>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
-
-
-
-
-
-
-
-
