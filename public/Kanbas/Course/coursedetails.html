@@ -1,224 +1,366 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        *{
-           
-            box-sizing: border-box;
-        }
-        table{
-            padding: 0;
-            margin: 0;
 
-        }
-        table tr td{
-         
-            vertical-align: text-top;
-         
-        }
-    </style>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Index</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../../vendors/fontawesome/css/all.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./details.css">
 </head>
+
 <body>
 
+  <div class="container mt-5">
+    <div class="row">
+      <div class="d-flex align-items-start">
+        <div class="nav d-none d-md-block flex-column nav-pills me-3 bg-dark" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+          <div style="height:80px;"></div>
+          <a
+              href="../profile/index.html"><button class="nav-link text-white rounded-0" id="v-pills-home-tab" data-bs-toggle="pill"
+            data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">
+              <div><i class="fa fa-user text-danger fs-3"></i></div>
+              <div>Account</div>
+            
+          </button></a>
+          <a
+            href="../Dashboard/Dashboard.html"><button class="nav-link rounded-0 text-white p-3" id="v-pills-profile-tab" data-bs-toggle="pill"
+            data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile"
+            aria-selected="false">
+            <div><i class="fa fa-check-circle text-danger fs-3"></i></div>
+            <div>Dashboard</div>
+          </button></a>
+          <button class="nav-link rounded-0 text-white active p-3 w-100" id="v-pills-Courses-tab" data-bs-toggle="pill"
+            data-bs-target="#v-pills-Courses" type="button" role="tab" aria-controls="v-pills-Courses"
+            aria-selected="false">
+            <div><i class="fa fa-dashboard text-danger fs-3"></i></div>
+            <div>Courses</div>
+          </button>
+          <button class="nav-link rounded-0 text-white p-3" id="v-pills-profile-tab" data-bs-toggle="pill"
+            data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile"
+            aria-selected="false">
+            <div><i class="fa fa-table text-danger fs-3"></i></div>
+            <div>Calendar
+            </div>
+          </button>
+          <button class="nav-link rounded-0 text-white p-3" id="v-pills-profile-tab" data-bs-toggle="pill"
+            data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile"
+            aria-selected="false">
+            <div><i class="fa fa-diamond text-danger fs-3"></i></div>
+            <div>Inbox
+            </div>
+          </button>
+          <button class="nav-link rounded-0 text-white p-3" id="v-pills-profile-tab" data-bs-toggle="pill"
+            data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile"
+            aria-selected="false">
+            <div><i class="fa fa-edit text-danger fs-3"></i></div>
+            <div>History
+            </div>
+          </button>
+          <button class="nav-link rounded-0 text-white p-3" id="v-pills-profile-tab" data-bs-toggle="pill"
+            data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile"
+            aria-selected="false">
+            <div><i class="fa fa-inbox text-danger fs-3"></i></div>
+            <div>Studio
+            </div>
+          </button>
+          <button class="nav-link rounded-0 text-white p-3" id="v-pills-profile-tab" data-bs-toggle="pill"
+            data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile"
+            aria-selected="false">
+            <div><i class="fa fa-sign-out text-danger fs-3"></i></div>
+            <div>Commons</div>
+          </button>
+          <button class="nav-link rounded-0 text-white p-3" id="v-pills-profile-tab" data-bs-toggle="pill"
+            data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile"
+            aria-selected="false">
+            <div><i class="fa fa-info-circle text-danger fs-3"></i></div>
+            <div>Help</div>
+          </button>
+        </div>
+        <div class="w-100">
+            <div class="d-flex align-items-center w-100 justify-content-between">
+                <div class="d-flex align-items-center">
+                <span class="fa fa-bars text-danger me-2"></span>
+                  <ol class="breadcrumb mb-0">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active">Settings</li>
+                </ol>
+                </div>
+            </div>
+            <hr>
+            <div class="row mt-3">
+                <div class="col-2 d-none d-md-block">
+                    <div class="list-group">
+                        <a href="#"
+                            class="list-group-item list-group-item-action rounded-0 border-0 text-danger">Home</a>
+                        <a href="#"
+                            class="list-group-item list-group-item-action rounded-0 border-0 text-danger">Modules</a>
+                        <a href="#"
+                            class="list-group-item list-group-item-action rounded-0 border-0 text-danger">Piazza</a>
+                        <a href="#"
+                            class="list-group-item list-group-item-action rounded-0 border-0 text-danger">Zoom Meetings</a>
+                        <a href="./assignments/index.html"
+                            class="list-group-item list-group-item-action rounded-0 border-0 text-danger">Assignments</a>
+                        <a href="#"
+                            class="list-group-item list-group-item-action rounded-0 border-0 text-danger">Quizzes
+                            Content</a>
+                            <a href="./grades.html"
+                            class="list-group-item list-group-item-action rounded-0 border-0 text-danger">Grades
+                            </a>
+                        <a href="#"
+                            class="list-group-item list-group-item-action rounded-0 border-0 text-danger">People
+                            </a>
+                        <a href="#"
+                            class="list-group-item list-group-item-action rounded-0 border-0 text-danger">Discussions
+                           </a>
+                           <a href="#"
+                            class="list-group-item list-group-item-action rounded-0 border-0 text-danger">Announcements
+                           </a>
+                           <a href="#"
+                            class="list-group-item list-group-item-action rounded-0 border-0 text-danger">Pages
+                           </a>
+                           <a href="#"
+                            class="list-group-item list-group-item-action rounded-0 border-0 text-danger">Files
+                           </a>
+                           <a href="#"
+                            class="list-group-item list-group-item-action rounded-0 border-0 text-danger">Rubrics
+                           </a>
+                           <a href="#"
+                            class="list-group-item list-group-item-action rounded-0 border-0 text-danger">Outcomes
+                           </a>
+                           <a href="#"
+                            class="list-group-item list-group-item-action rounded-0 border-0 text-danger">Collaborations
+                           </a>
 
-    <table>
-        <tr>
-            <td>
-                <ul>
-                    <li>
-                        <a href="/Kanbas/profile/index.html">Account</a>
-                    </li>
-                    <li>
-                        <a href="#">Dashboard</a>
-                    </li>
-                    <li>
-                        <a href="/Kanbas/Course/grades.html">Courses</a>
-                    </li>
-                    <li>
-                        <a href="#">Calendar</a>
-                    </li>
-                    <li>
-                        <a href="#">Inbox</a>
-                    </li>
-                    <li>
-                        <a href="#">History</a>
-                    </li>
-                    <li>
-                        <a href="#">Studio</a>
-                    </li>
-                    <li>
-                        <a href="#">Commons</a>
-                    </li>
-                    <li>
-                        <a href="#">Help</a>
-                    </li>
-                </ul>
-
-            </td>
-
-            <td>
-                <ul>
-                    <li>
-                        <a href="/Kanbas/Course/home.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="#">Modules</a>
-                    </li>
-                    <li>
-                        <a href="#">Piazza</a>
-                    </li>
-                    <li>
-                        <a href="#">Zoom Meetings</a>
-                    </li>
-                    <li>
-                        <a href="/Kanbas/Course/assignments/index.html">Assignments</a>
-                    </li>
-                    <li>
-                        <a href="#">Quizzes</a>
-                    </li>
-                    <li>
-                        <a href="/Kanbas/Course/grades.html">Grades</a>
-                    </li>
-                    <li>
-                        <a href="#">People</a>
-                    </li>
-                    <li>
-                        <a href="#">Panopto Video</a>
-                    </li>
-
-                    <li>
-                        <a href="#">Discussions</a>
-                    </li>
-                    <li>
-                        <a href="#">Announcements</a>
-                    </li>
-                    <li>
-                        <a href="#">Pages</a>
-                    </li>
-                    <li>
-                        <a href="#">Files</a>
-                    </li>
-                    <li>
-                        <a href="#">Rubrics</a>
-                    </li>
-                    <li>
-                        <a href="#">Outcomes</a>
-                    </li>
-                    <li>
-                        <a href="#">Collaborations</a>
-                    </li>
-                    <li>
-                        <a href="#">Syllabus</a>
-                    </li>
-                    <li>
-                        <a href="#">Settings</a>
-                    </li>
-                </ul>
-            </td>
-     
-      <td>
-        <button>Course Details</button><button>Sections</button><button>Navigation</button><button>Apps</button><button>Feature Options</button><button>Integrations</button>
-        <h1>Course Details</h1>
-        <p>Image</p>
-        <p>Name:Web Development</p>
-        <p>
-            Course Code:CS4550
-        </p>
-        <p>
-            Blueprint Course: No
-        </p>
-        <p>
-            Course Template: <input type="checkbox">Enable course as a Course Template
-        </p>
-        <p>Time Zone: <select name="" id="">
-            <option value="Eastern Time(US & Canada)(-05:/-04:00)">Eastern Time(US & Canada)(-05:/-04:00)</option>
-            <option value="Eastern Time(US & Canada)(-05:/-04:00)">Eastern Time(US & Canada)(-05:/-04:00)</option>
-        </select></p>
-        <p>
-            SIS ID: CS4550.
-        </p>
-        <p>
-            Subaccount: CS Undergrad
-        </p>
-        <p>Term: Fall 2023 Semester Full Term</p>
-        <p>Participation: <select name="" id="">
-            <option value="Term">Term</option>
-            <option value="Term">Term</option>
-        </select></p>
-        <p>
-            Course participation is limited to term start and end dates
-        </p>
-        <h3>Start</h3><input type="text">
-        <h3>End</h3>
-        <input type="text">
+                           <a href="#"
+                            class="list-group-item list-group-item-action rounded-0 border-0 text-danger">Syllabus
+                           </a>
+                           <a href="#"
+                            class="list-group-item list-group-item-action rounded-0 border-0 text-danger active">Settings
+                           </a>
+                    </div>
+                </div>
+                <div class="col-10 ">
+                    <div class="d-flex justify-content-start">
+                        <ul class="nav nav-tabs w-100">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Course Details</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link text-danger" href="#">Sections</a>
+                              </li>
+                            <li class="nav-item">
+                              <a class="nav-link text-danger" href="settings.html">Navigation</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link text-danger" href="#">Apps</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link text-danger" href="#">Feature Option</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link  text-danger">Intergrations</a>
+                            </li>
+                          </ul>
+                    </div>
+                    <p class="mt-3 fs-4" style="width: 70%;">Course Details</p>
+                    <div class="row align-items-center">
+                        <div class="col-4"><p class="fs-5 mb-0">Image</p></div>
+                        <div class="col-3 text-center border" style="height: 120px;line-height: 120px;"><button class="btn btn-light border">choose image</button></div>
+                    </div>
+                    <div class="row mt-3 align-items-center">
+                        <div class="col-4"><p class="fs-5 mb-0">Name</p></div>
+                        <div class="col-8"><p class="fs-5 mb-0">CS4550 12621 Web DEvelopment</p></div>
+                    </div>
+                    <div class="row mt-3 align-items-center">
+                        <div class="col-4"><p class="fs-5 mb-0">Course Code:</p></div>
+                        <div class="col-8"><p class="fs-5 mb-0">CS4550 12621</p></div>
+                    </div>
+                    <div class="row mt-3 align-items-center">
+                        <div class="col-4"><p class="fs-5 mb-0">Blueprint Course:</p></div>
+                        <div class="col-8"><p class="fs-5 mb-0">No</p></div>
+                    </div>
+                    <div class="row mt-3 align-items-center">
+                        <div class="col-4"><p class="fs-5 mb-0">Course Template:</p></div>
+                        <div class="col-8"><div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                              Enable course as a Course Template
+                            </label>
+                          </div></div>
+                    </div>
+                    <div class="row mt-3 align-items-center">
+                        <div class="col-4"><p class="fs-5 mb-0">Time Zone:</p></div>
+                        <div class="col-6"><select class="form-select" aria-label="Default select example">
+                            <option selected>Eastern Time</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select></div>
+                    </div>
+                    
+                    <div class="row mt-3 align-items-center">
+                        <div class="col-4"><p class="fs-5 mb-0">SIS ID:</p></div>
+                        <div class="col-8"><p class="fs-5 mb-0">CS4550.126321.202040</p></div>
+                    </div>
+                    
+                    <div class="row mt-3 align-items-center">
+                        <div class="col-4"><p class="fs-5 mb-0">Subaccount:</p></div>
+                        <div class="col-8"><p class="fs-5 mb-0 text-danger">CS Undergrad</p></div>
+                    </div>
+                    
+                    <div class="row mt-3 align-items-center">
+                        <div class="col-4"><p class="fs-5 mb-0">Term:</p></div>
+                        <div class="col-8"><p class="fs-5 mb-0">202410_1</p></div>
+                    </div>
+                    
+                    <div class="row mt-3">
+                        <div class="col-4"><p class="fs-5 mb-0">Participation:</p></div>
+                        <div class="col-6"><div><select class="form-select" aria-label="Default select example">
+                            <option selected>Term</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div><p class="fs-6 mt-3 mb-0">Course Participation is limited to term staer and end dates</p>
+                    <div style="width: 60%;">
+                        <p class="fs-5 mt-3 mb-0">Start</p>
+                        <input type="date" class="form-control mt-2">
+                    </div>
+                    <div style="width: 60%;">
+                        <p class="fs-5 mt-3 mb-0">End</p>
+                        <input type="date" class="form-control mt-2">
+                    </div>
+                    <div>
+                        <div class="form-check mt-3">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                              Restrict students from viewing course before term start date
+                            </label>
+                          </div>
+                    </div>
+                    <div>
+                        <div class="form-check mt-3">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                              Restrict students from viewing course after term end date
+                            </label>
+                          </div>
+                    </div></div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-4"><p class="fs-5 mb-0">Default due time:</p></div>
+                        <div class="col-6"><select class="form-select" aria-label="Default select example">
+                            <option selected>Account default</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        <p class="mt-2">This influences the user interface for setting due</p></div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-4"><p class="fs-5 mb-0">Language:</p></div>
+                        <div class="col-6"><select class="form-select" aria-label="Default select example">
+                            <option selected>not set</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        <p class="mt-2">This influences the user interface for setting due</p></div>
+                    </div>
+                    <div class="row mt-3 align-items-center">
+                        <div class="col-4"><p class="fs-5 mb-0">File storage:</p></div>
+                        <div class="col-8"><p class="fs-5 mb-0">10000 megabytes</p></div>
+                    </div>                    
+                    <div class="row mt-3 align-items-center">
+                        <div class="col-4"><p class="fs-5 mb-0">Large course:</p></div>
+                        <div class="col-8"><div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                              Enable course as a Course Template
+                            </label>
+                          </div></div>
+                    </div>
+                    <div class="row mt-3 align-items-center">
+                        <div class="col-4"><p class="fs-5 mb-0">Grading Scheme:</p></div>
+                        <div class="col-8"><div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                              Enable course as a Course Template
+                            </label>
+                          </div></div>
+                    </div>
+                    
+                    <div class="row mt-3">
+                        <div class="col-4"><p class="fs-5 mb-0">License:</p></div>
+                        <div class="col-6"><select class="form-select" aria-label="Default select example">
+                            <option selected>not set</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select></div>
+                    </div>
+                    <div class="row mt-3 align-items-center">
+                        <div class="col-4"><p class="fs-5 mb-0">File copyright:</p></div>
+                        <div class="col-8"><div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                              Enable course as a Course Template
+                            </label>
+                          </div></div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-4"><p class="fs-5 mb-0">Visibility:</p></div>
+                        <div class="col-6"><p class="mt-2">This influences the user interface for setting due</p><select class="form-select" aria-label="Default select example">
+                            <option selected>not set</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select><div class="form-check mt-3">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                              Enable course as a Course Template
+                            </label>
+                          </div></div>
+                    <div class="row mt-3">
+                        <div class="col-4"><p class="fs-5 mb-0">Format:</p></div>
+                        <div class="col-6"><select class="form-select" aria-label="Default select example">
+                            <option selected>On-Campus</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select></div>
+                    </div>
+                    </div>
+                    <div class="row mt-3 align-items-center">
+                        <div class="col-4"><p class="fs-5 mb-0">Mastery Paths:</p></div>
+                        <div class="col-8"><div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                              Enable course as a Course Template
+                            </label>
+                          </div></div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-4"><p class="fs-5 mb-0">Descriptions:</p></div>
+                        <div class="col-6"><div class="input-group">
+                            <textarea class="form-control" aria-label="With textarea"></textarea>
+                          </div><p class="mt-3 text-danger">more options</p></div>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-end">
+                        <button class="btn btn-danger">Update Course</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
         
-      </td>
- <td>
-    <p>
-        <input type="checkbox">Restrict students from viewing course before term start date
-    </p>
-    <p>
-        <input type="checkbox">Restrict students from viewing course after term end date
-    </p>
-    <p>
-        Default due time: <select name="" id=""><option value="Account default(11:59pm)">Account default(11:59pm)</option><option value="Account default(11:59pm)">Account default(11:59pm)</option></select>
-    </p><p>
-        The o ay es thna as intace for seting due dates.lt does not change the time <br>
-        due for any existing assignments.
-    </p>
+      </div>
+    </div>
 
-    <p>
-        Language.<select name="" id=""><option value="Not set (user-confgurable, defaults to English (Unit">Not set (user-confgurable, defaults to English (Unit</option><option value="Not set (user-confgurable, defaults to English (Unit">Not set (user-confgurable, defaults to English (Unit</option></select>
-    </p><p>
-        Th's wvilloveride any user/system language preferences. This is only recommended <br>
-        for foreign language counses
-    </p>
-    <p>
-        File Storage:10000 megabytes
-    </p>
-    <p>
-        Large Course:  <input type="checkbox">Launch SpeedGrader Filtered by Student Group
-    </p>
-    <p>
-        Grading Scheme: <input type="checkbox">Enable course grading scheme
-    </p>
-    <p>
-        License:<select name="" id=""><option value="Private (Copyrighted)">Private (Copyrighted)</option><option value="Private (Copyrighted)">Private (Copyrighted)</option></select>
-    </p>
-    <p>
-        File Copyright:<input type="checkbox">
-        Copyright and license information must be provided for files before they are published
-    </p>
-    <p>
-        Visibility:If you need to make your course public please contact youradministrator/support.
-    </p>
-    <p>
-        <input type="checkbox"> lnclude this course in the public course index
-    </p>
-    <p>
-        Format:<select name="" id=""><option value="On-Campus">On-Campus</option><option value="On-Campus">On-Campus</option></select>
-    </p>
-    <p>
-        Mastery Paths: <input type="checkbox"> Enable individual learning paths for students based on assessment
-    </p>
-    <p>
-        Description: <textarea name="" id="" cols="30" rows="10"></textarea> 
-    </p>
-    <a href="#">more options</a><br>
-    <button>Update Course Details</button>
- </td>
-        </tr>
-    </table>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
-
-
-
-
-
-
-
-
