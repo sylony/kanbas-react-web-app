@@ -35,6 +35,7 @@ function KanbasNavigation() {
                         className={`flex justify-center ${pathname.includes(item.link) && "active"}`}>
                         <button className="nav-link rounded-0 text-white p-3" id="v-pills-profile-tab"
                             type="button" role="tab"
+                            style={{ margin: "0 auto" }}
                         >
                             <div><i className={
                                 [item.icon + " fa text-danger fs-3"]
@@ -46,34 +47,34 @@ function KanbasNavigation() {
 
 
                 <button className="nav-link rounded-0 text-white p-3" id="v-pills-profile-tab"
-                    type="button" role="tab"
+                    type="button" role="tab" style={{ margin: "0 auto" }}
                 >
                     <div><i className="fa fa-diamond text-danger fs-3"></i></div>
                     <div>Inbox
                     </div>
                 </button>
                 <button className="nav-link rounded-0 text-white p-3" id="v-pills-profile-tab"
-                    type="button" role="tab"
+                    type="button" role="tab" style={{ margin: "0 auto" }}
                 >
                     <div><i className="fa fa-edit text-danger fs-3"></i></div>
                     <div>History
                     </div>
                 </button>
                 <button className="nav-link rounded-0 text-white p-3" id="v-pills-profile-tab"
-                    type="button" role="tab"
+                    type="button" role="tab" style={{ margin: "0 auto" }}
                 >
                     <div><i className="fa fa-inbox text-danger fs-3"></i></div>
                     <div>Studio
                     </div>
                 </button>
                 <button className="nav-link rounded-0 text-white p-3" id="v-pills-profile-tab"
-                    type="button" role="tab"
+                    type="button" role="tab" style={{ margin: "0 auto" }}
                 >
                     <div><i className="fa fa-sign-out text-danger fs-3"></i></div>
                     <div>Commons</div>
                 </button>
                 <button className="nav-link rounded-0 text-white p-3" id="v-pills-profile-tab"
-                    type="button" role="tab"
+                    type="button" role="tab" style={{ margin: "0 auto" }}
                 >
                     <div><i className="fa fa-info-circle text-danger fs-3"></i></div>
                     <div>Help</div>

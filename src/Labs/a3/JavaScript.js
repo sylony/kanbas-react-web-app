@@ -31,11 +31,11 @@ function JavaScript() {
       <TemplateLiterals />
       <FindFunction />
       <JsonStringify />
-      <MapFunction />
-      <AddingAndRemovingDataToFromArrays />
+      {/* <MapFunction /> */}
+      {/* <AddingAndRemovingDataToFromArrays /> */}
       <WorkingWithArrays />
-      <FunctionParenthesisAndParameters />
-      <ImpliedReturn />
+      {/* <FunctionParenthesisAndParameters /> */}
+      {/* <ImpliedReturn /> */}
       <ArrowFunctions />
       <ES5Functions />
       <TernaryOperator />

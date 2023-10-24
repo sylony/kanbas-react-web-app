@@ -11,7 +11,7 @@ function Courses() {
     const course = db.courses.find((course) => course._id === courseId);
     // console.log('啊', db.courses)
     return (
-        <div className="w-full">
+        <div className="" style={{ width: "100%" }}>
             <div className="d-flex align-items-center w-100 justify-content-between">
                 <div className="d-flex align-items-center">
                     <span className="fa fa-bars text-danger me-2"></span>
@@ -26,10 +26,10 @@ function Courses() {
             </div>
             <hr className="my-2" />
 
-            <div className="flex">
+            <div className="" style={{ display: "flex" }}>
                 <CourseNavigation />
-                <div className="w-8/12 flex-1">
-                    <div className="flex flex-col">
+                <div className="" style={{ width: "66.666667%", flex: "1 1 0%" }}>
+                    <div className="" style={{ display: "flex", flexDirection: "column" }}>
                         <div className="list-group">
                             <Routes>
                                 <Route path="/" element={<Navigate to="Home" />} />

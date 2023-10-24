@@ -7,10 +7,10 @@ function ModuleList() {
     return (
         <div>
 
-            <div className="flex gap-x-4">
+            <div className="" style={{ display: "flex", columnGap: "16px" }}>
 
                 <div className="w-9/12">
-                    <div className="d-flex mb-6 flex gap-x-3 justify-content-end">
+                    <div className="d-flex mb-6  justify-content-end" style={{ display: "flex", columnGap: "12px" }}>
                         <button className="btn btn-light mr-1">Collapse All</button>
                         <button className="btn btn-light ml-1">View Progress</button>
                         <div className="dropdown">
@@ -45,11 +45,11 @@ function ModuleList() {
                         }
                     </ul>
                 </div>
-                <div className="col-3 d-none d-lg-block w-3/12 pr-6">
+                <div className="col-3 d-none d-lg-block " style={{ width: "25%", paddingRight: "1.5rem" }}>
                     <p>Course Status</p>
                     <div className="d-flex"><button className="btn btn-light border">Unpublish</button>
                         <button className="btn btn-success border">Published</button></div>
-                    <div className="btns flex flex-col gap-y-2">
+                    <div className="btns" style={{ display: "flex", flexDirection: "column", rowGap: "8px" }}>
                         <button className="btn  mt-3 btn-light border"><i className="fa fa-location-arrow" ></i>Import Existing Content</button>
                         <button className="btn btn-light border"><i className="fa fa-medkit"></i>Import Fro
                             ommons</button>

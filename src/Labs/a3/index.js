@@ -7,7 +7,9 @@ function Assignment3() {
   return (
     <div>
       <h1>Assignment 3</h1> <ConditionalOutput /> <Styles />
-      <Classes /> <PathParameters /> <JavaScript />
+      <Classes />
+      <PathParameters />
+      <JavaScript />
     </div>
   );
 }

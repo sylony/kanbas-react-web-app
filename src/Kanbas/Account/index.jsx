@@ -4,7 +4,7 @@ function Account() {
 
     const [is, setIs] = useState(0);
     return (
-        <div className="tab-content flex-grow-1 w-full" id="v-pills-tabContent">
+        <div className="tab-content flex-grow-1 " id="v-pills-tabContent" style={{ width: "100%" }}>
             <div className="tab-pane fade show active" id="v-pills-home" role="tabpanel"
                 aria-labelledby="v-pills-home-tab" >
                 <div className="row">
@@ -95,12 +95,12 @@ function Account() {
                                                 </p>
                                             </div>
                                             <div className="mb-3">
-                                                <label for="exampleFormControlInput1" className="form-label">Name:*</label>
+                                                <label className="form-label">Name:*</label>
                                                 <input type="email" className="form-control" id="exampleFormControlInput1"
                                                     placeholder="Jose Annunziato" />
                                             </div>
                                             <div className="mb-3">
-                                                <label for="exampleFormControlInput1"
+                                                <label
                                                     className="form-label">Pronouns:</label>
                                                 <select className="form-select">
                                                     <option value="None">None</option>
@@ -109,7 +109,7 @@ function Account() {
                                                 </select>
                                             </div>
                                             <div className="mb-3">
-                                                <label for="exampleFormControlInput1" className="form-label">Title:</label>
+                                                <label className="form-label">Title:</label>
                                                 <input type="email" className="form-control" id="exampleFormControlInput1"
                                                     placeholder="Jose Annunziato" />
                                             </div>
@@ -121,7 +121,7 @@ function Account() {
 
                                             </p>
                                             <div className="mb-3">
-                                                <label for="exampleFormControlTextarea1" className="form-label">
+                                                <label className="form-label">
                                                     Biography
 
                                                 </label>
@@ -146,8 +146,8 @@ function Account() {
                                             </p>
 
                                             <button className="btn btn-light"
-                                                onclick="location.href='index.html';">cancel</button>
-                                            <button className="btn btn-danger" onclick="location.href='index.html';">save
+                                            >cancel</button>
+                                            <button className="btn btn-danger">save
                                                 profile</button>
                                         </div >
                                 }

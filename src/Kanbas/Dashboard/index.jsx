@@ -4,13 +4,14 @@ function Dashboard() {
     const courses = db.courses;
     console.log('courses_data', courses)
     return (
-        <div className="w-full">
+        <div className="" style={{ width: "1005" }}>
             <h1>Dashboard</h1>
             <hr />
             <div className="row row-cols-1 row-cols-md-3 g-4 wd-dashboard-grid gap-4">
 
                 {courses.map((course) => (
-                    <Link key={course._id} to={`/Kanbas/Courses/${course._id}`} className="list-group-item col-xs-12 col-sm-6 col-md-4 col-lg-3 w-72">
+                    <Link key={course._id} to={`/Kanbas/Courses/${course._id}`} className="list-group-item col-xs-12 col-sm-6 col-md-4 col-lg-3"
+                        style={{ width: "288px", }}>
                         <div className="card h-100">
                             <div className="card-top" ></div>
                             <div className="card-body">

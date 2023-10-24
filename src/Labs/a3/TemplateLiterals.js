@@ -24,3 +24,5 @@ function TemplateLiterals() {
     </div>
   );
 }
+
+export default TemplateLiterals

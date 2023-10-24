@@ -8,7 +8,7 @@ function Grades() {
         <div>
             <div className="d-flex justify-content-end align-items-center">
 
-                <div className="flex gap-x-4">
+                <div className="" style={{ display: "flex", columnGap: "16px" }}>
                     <button className="btn btn-light"><i className="fa fa-sign-in fs-10"></i>
                         Published
                     </button>
