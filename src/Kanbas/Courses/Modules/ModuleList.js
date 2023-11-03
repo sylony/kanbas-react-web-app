@@ -1,9 +1,51 @@
 // import React from "react";
 import { useParams } from "react-router-dom";
 import db from "../../Database";
+import React, { useState } from "react";
+
+import { useSelector, useDispatch } from "react-redux";
+import { addModule, deleteModule, updateModule, setModule} from "./modulesReducer";
+
 function ModuleList() {
     const { courseId } = useParams();
-    const modules = db.modules;
+    // const modules = db.modules;
+    // const [modules, setModules] = useState(db.modules);
+
+    // const [module] = useState({
+    //     name: "New Module",
+    //     description: "New Description",
+    //     course: courseId,
+    // });
+
+    const modules = useSelector((state) => state.modulesReducer.modules);
+    const module = useSelector((state) => state.modulesReducer.module);
+    const dispatch = useDispatch();
+
+    // const addModule = (module) => {
+    //     setModules([
+    //         { ...module, _id: new Date().getTime().toString() },
+    //         ...modules,
+    //     ]);
+    // };
+
+    // const deleteModule = (itemId) => {
+    //     console.log(itemId)
+    //     setModules(modules.filter(
+    //         (itemModule) => itemModule._id !== itemId));
+    // };
+
+    // const updateModule = () => {
+    //     setModules(
+    //         modules.map((m) => {
+    //             if (m._id === module._id) {
+    //                 return module;
+    //             } else {
+    //                 return m;
+    //             }
+    //         })
+    //     );
+    // }
+
     return (
         <div>
 
@@ -26,20 +68,52 @@ function ModuleList() {
                         <button className="btn btn-danger"><i className="fa fa-add fs-10"></i>Module</button>
                         <button className="btn btn-light"><i className="fa fa-ellipsis-v fs-10"></i></button>
                     </div>
-                    <ul className="list-group">
+                    <ul className="list-group" style={{ marginTop: "20px" }}>
+
+                        <li className="list-group-item">
+                            <div>
+                                <button type="button" className="btn btn-success" style={{ marginRight: "10px" }} onClick={() => dispatch(addModule({ ...module, course: courseId }))} >Add</button>
+                                <button type="button" className="btn btn-success" onClick={() => dispatch(updateModule(module))} >Update {module._id}</button>
+                            </div>
+
+
+                            <textarea className="form-control" aria-label="With textarea" style={{ margin: "10px 0" }}
+                                value={module.name}
+                                onChange={(e) =>
+                                    dispatch(setModule({ ...module, name: e.target.value }))
+                                }>
+                            </textarea>
+                            <textarea className="form-control" aria-label="With textarea"
+                                value={module.description}
+                                onChange={(e) =>
+                                    dispatch(setModule({ ...module, description: e.target.value }))
+                                }>
+                            </textarea>
+                        </li>
+
                         {
                             modules
-                                .filter((module) => module.course === courseId)
-                                .map((module, index) => (
-                                    <li key={index} className=" my-2 border p-3 rounded-lg align-items-center d-flex justify-content-between">
-                                        <div>
-                                            <i className="fa fa-ellipsis-v fs-5"></i>
-                                            <span> {module.name}</span>
-                                            <p>{module.description}</p>
+                                .filter((item) => item.course === courseId)
+                                .map((item, index) => (
+                                    <li key={index} className="list-group-item" style={{ position: "relative" }}>
+                                        <div style={{ display: "flex", justifyContent: "flex-end", marginBottom: "10px" }}>
+
+
+                                            <button type="button" className="btn btn-warning" style={{ marginRight: "10px" }}
+                                                onClick={() => dispatch(setModule(item))}>
+                                                Edit
+                                            </button>
+
+                                            <button type="button" className="btn btn-danger"
+                                                onClick={() => dispatch(deleteModule(item._id))} >
+                                                Delete
+                                            </button>
+
+
                                         </div>
-                                        <div className="icon">
-                                            <i className="fa fa-check-circle  text-success fs-5"></i>
-                                            <i className="fa fa-ellipsis-v fs-5 ml-2"></i></div>
+                                        <h3>{item.name}</h3>
+                                        <p>{item.description}</p>
+                                        <p>{item._id}</p>
                                     </li>
                                 ))
                         }

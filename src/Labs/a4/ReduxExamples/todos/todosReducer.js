@@ -3,6 +3,7 @@ const initialState = {
   todos: [
     { id: "1", title: "Learn React" },
     { id: "2", title: "Learn Node" },
+    { id: "3", title: "Learn Vue" },
   ],
   todo: { title: "Learn Mongo" },
 };

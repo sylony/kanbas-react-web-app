@@ -6,10 +6,21 @@ import Home from "./Home";
 import Assignments from "./Assignments";
 import AssignmentEditor from "./Assignments/AssignmentEditor";
 import Grades from "./Grades";
-function Courses() {
+function Courses({ courses }) {
+    if (!courses) {
+        courses = [
+            {
+                endDate: "2023-05-15",
+                name: "Rocket Propulsion",
+                number: "RS4550",
+                startDate: "2023-01-10",
+                _id: "RS101"
+            }
+        ]
+    }
     const { courseId } = useParams();
-    const course = db.courses.find((course) => course._id === courseId);
-    // console.log('啊', db.courses)
+    const course = courses.find((course) => course._id === courseId);
+
     return (
         <div className="" style={{ width: "100%" }}>
             <div className="d-flex align-items-center w-100 justify-content-between">
