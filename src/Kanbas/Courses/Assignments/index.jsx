@@ -1,10 +1,11 @@
 // import React from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link, useParams, useNavigate } from "react-router-dom";
 import db from "../../Database";
 
 import { useSelector, useDispatch } from "react-redux";
 
 import { addAssignments, deleteAssignment, updateAssignments, setAssignments } from "./settingsReducer";
+
 
 function Assignments() {
     const { courseId } = useParams();
@@ -17,8 +18,7 @@ function Assignments() {
     const assignment = useSelector((state) => state.settingsReducer.assignment);
     const dispatch = useDispatch();
 
-
-    console.log("assignments", assignments)
+    const navigate = useNavigate();
 
     return (
         <div>
@@ -32,11 +32,11 @@ function Assignments() {
                                 style={{ width: "100%" }} />
                         </div>
                         <div>
-                            <button onClick={() => dispatch(addAssignments({ ...assignment, course: courseId }))}
-                                className="btn btn-light ml-1" style={{ marginRight: "10px" }}><i className="fa fa-add fs-10"></i>Assignments</button>
-                            <button className="btn btn-light ml-1"><i className="fa fa-add fs-10"></i>Group</button>
-                            <button className="btn btn-danger" style={{ margin: "0 10px" }}><i className="fa fa-add fs-10"></i>Assignments</button>
-                            <button className="btn btn-light"><i className="fa fa-ellipsis-v fs-10"></i></button>
+                            <button onClick={() => navigate('/Kanbas/Courses/Assignments/Assignments/add')}
+                                className="btn btn-light ml-1" style={{ marginRight: "10px" }}><i className="fa fa-add fs-10"></i>Assignment</button>
+                            <button className="btn btn-light ml-1" style={{ marginRight: "20px" }}><i className="fa fa-add fs-10"></i>Group</button>
+                            {/* <button className="btn btn-danger" style={{ margin: "0 10px" }}><i className="fa fa-add fs-10"></i>Assignments</button> */}
+                            {/* <button className="btn btn-light"><i className="fa fa-ellipsis-v fs-10"></i></button> */}
                         </div>
 
                     </div>
@@ -76,7 +76,7 @@ function Assignments() {
                                     <button onClick={e => {
                                         e.preventDefault()
                                         dispatch(deleteAssignment(assignment._id))
-                                    }} type={"button"} 
+                                    }} type={"button"}
                                         className="btn btn-danger ml-1" style={{ marginRight: "10px" }}>Delete</button>
 
                                     <i className="fa fa-check-circle  text-success fs-5 mr-2" style={{ margin: "0 10px" }}></i>
