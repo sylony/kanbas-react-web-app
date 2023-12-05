@@ -1,0 +1,85 @@
+.nav-pills .nav-link.active {
+  background-color: #fff;
+  color: rgb(192, 36, 36) !important;
+}
+.nav-pills .nav-link a {
+  text-decoration: none;
+  background-color: #fff;
+  color: white!important;
+}
+.nav-pills .nav-link a.active {
+  color: rgb(192, 36, 36) !important;
+}
+.person h1 {
+  font-size: 18px;
+  margin: 15px 0;
+}
+
+.person h2 {
+  font-size: 18px;
+  margin: 15px 0;
+}
+
+.person p {
+  font-size: 14px;
+}
+
+.perser-icon {
+  font-size: 60px;
+}
+
+.person a {
+  font-size: 14px;
+  color: red;
+}
+
+.list-group-item.active {
+  background-color: transparent !important;
+  border-left: 2px solid #666 !important;
+  color: #000 !important;
+}
+.breadcrumb> li + li::before{
+  content: "> "!important;
+}
+.justify-content-end button{
+  margin: 0 5px;
+}
+.list-group .icon i{
+  margin: 0 10px;
+}
+.list-group span{
+  margin-left: 20px;
+  font-size: 16px;
+}
+.btns button{
+  width: 100%!important;
+  margin-top: 5px;
+  text-align: left;
+}
+.btns button i{
+  margin-right: 5px;
+}
+.fa-link{
+  margin-left: 10px;
+}
+.nav-link{
+  width: 100%;
+}
+.d-flex a{
+  text-decoration: none;
+}
+.tr td{
+  width: 200px;
+  height: 40px;
+}
+.tr td input{
+  width: 100%;
+  height: 100%;
+  border: 1px solid transparent;
+  outline: none;
+  background: transparent;
+  transition: .3s;
+}
+.tr td input:focus{
+  border: 1px solid rgb(45, 159, 235);
+}
